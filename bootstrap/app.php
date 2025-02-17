@@ -14,8 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'admin' => \App\Http\Middleware\AdminMiddleware::class,
             'user' => \App\Http\Middleware\UserMiddleware::class,
-            // 'clear_cookies' => \App\Http\Middleware\ClearCookies::class,
-        ]);
+'clear_cookies' => \App\Http\Middleware\ClearSessionCookies::class,        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

@@ -1,13 +1,19 @@
 <?php
 
 namespace App\Http\Controllers\User;
-use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
 
 class UserLoginController extends Controller
 {
+    /**
+     * Display the login form for users.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
         return view('user.login');
@@ -37,5 +43,4 @@ class UserLoginController extends Controller
 
 
       
-    }
-}
+    }}
