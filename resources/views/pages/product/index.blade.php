@@ -94,7 +94,7 @@
 @push('css')
 <style>
     .form-area{
-        padding: 20px;
+        padding: 20px;  
         margin-top: 20px;
         background-color: white;
     }
