@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Hash;
 use App\Models\User;
+use Hash;
+use Illuminate\Http\Request;
+
 class AdminRegistationController extends Controller
 {
-    public function create()
+     public function create()
     {
         return view('admin.create');
     }
